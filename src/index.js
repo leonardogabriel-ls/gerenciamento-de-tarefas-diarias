@@ -1,6 +1,9 @@
 const express = require('express')
+require("dotenv").config()
 const { rotas } = require('./rotas/rotas')
+
 const app = express()
+
 const porta = 3000
 app.use(rotas)
 
